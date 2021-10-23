@@ -1,0 +1,58 @@
+/*---------------------|normalize|--------------------*/
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url(../font/IRANSansWeb.eot);
+    src: url(../font/IRANSansWeb.eot) format("embedded-opentype"), url(../font/IRANSansWeb.woff) format("woff"), url(../font/IRANSansWeb.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'shabnam-bold';
+    src: url(../font/Shabnam-Bold.eot);
+    src: url(../font/Shabnam-Bold.eot) format("embedded-opentype"), url(../font/Shabnam-Bold.woff) format("woff"), url(../font/Shabnam-Bold.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'shabnam';
+    src: url(../font/Shabnam.eot);
+    src: url(../font/Shabnam.eot) format("embedded-opentype"), url(../font/Shabnam.woff) format("woff"), url(../font/Shabnam.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+*, body {
+    font-family: shabnam;
+}
+
+.img-normal {
+    max-width: 100%;
+    display: block;
+}
+
+.a-cus {
+    text-decoration: none;
+    color: inherit;
+}
+
+.a-cus:hover {
+    color: inherit;
+}
+
+.list-cus {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
