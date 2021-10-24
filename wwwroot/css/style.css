@@ -1,4 +1,14 @@
 /*---------------------|normalize|--------------------*/
+
+:root {
+    --primary-color: #222222;
+    --secoundary-color: #888888;
+    --primary-background-color: #f4f4f4;
+    --focused-border-bottom: 1px solid #222222;
+    --line-eee: 2px solid #eeeeee;
+    --main-transition: .2s ease-in-out all;
+}
+
 @font-face {
     font-family: 'IRANSansWeb';
     src: url(../font/IRANSansWeb.eot);
@@ -33,7 +43,8 @@ html {
     box-sizing: inherit;
 }
 
-*, body {
+*,
+body {
     font-family: shabnam;
 }
 
@@ -51,8 +62,81 @@ html {
     color: inherit;
 }
 
-.list-cus {
+.list-norm {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+
+/* header */
+
+.header {
+    padding: 5rem 0;
+}
+
+.main-nav__link {
+    padding: 0 1rem;
+    font-size: 15px;
+    transition: var(--main-transition);
+    color: var(--primary-color);
+}
+
+.main-nav__link:hover {
+    color: var(--secoundary-color);
+}
+
+.main-nav__link>i {
+    font-size: 12px;
+}
+
+
+/* footer */
+
+.top-footer {
+    border-top: var(--line-eee);
+    padding: 5rem 0;
+}
+
+.top-footer-list__title {
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.top-footer-list__item {
+    color: var(--secoundary-color);
+    font-size: 14px;
+    margin-bottom: .5rem;
+}
+
+.bottom-footer {
+    border-top: var(--line-eee);
+    padding: 2rem 0;
+}
+
+.bottom-footer-right__link {
+    padding: 0 1rem;
+    font-size: 14px;
+    color: var(--secoundary-color);
+    transition: var(--main-transition);
+}
+
+.bottom-footer-right__link:hover {
+    color: var(--primary-color);
+}
+
+.bottom-footer-left__item {
+    font-size: 14px;
+}
+
+.bottom-footer-left__link {
+    font-size: 16px;
+    padding-right: 1rem;
+    color: var(--primary-color);
+    transition: var(--main-transition);
+}
+
+.bottom-footer-left__link:hover {
+    color: var(--secoundary-color);
 }
