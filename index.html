@@ -14,9 +14,9 @@
 
 <body>
     <div class="container">
-        <header class="row header">
-            <nav class="col-12 col-md-4">
-                <ul class="main-nav list-norm list-inline">
+        <header class="row header align-items-center">
+            <nav class="col-6 col-md-5">
+                <ul class="main-nav list-norm list-inline d-none d-md-block">
                     <li class="main-nav__item list-inline-item">
                         <a href="#" class="main-nav__link a-cus">
                              خانه
@@ -36,14 +36,15 @@
                         <a href="#" class="main-nav__link a-cus">درباره ما</a>
                     </li>
                 </ul>
+                <a href="#" class="text-dark a-cus"><i class="fas fa-bars mx-3 hamber-icon d-block d-md-none"></i></a>
             </nav>
-            <div class="col-12 col-md-4">
+            <div class="col-6 col-md-2">
                 <h1 class="logo-wrapper">
                     <img src="./wwwroot/img/logo-dark.png" alt="Piano shop" class="logo-wrapper__img d-block m-auto">
                     <span class="visually-hidden">piano shop</span>
                 </h1>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-5 d-none d-md-block">
                 <ul class="main-nav list-norm list-inline text-start">
                     <li class="main-nav__item list-inline-item">
                         <a href="#" class="main-nav__link a-cus">ورود</a>
@@ -64,8 +65,8 @@
         <footer>
             <section class="top-footer">
                 <div class="row">
-                    <div class="col-6 col-md-3">
-                        <ul class="list-norm top-footer-list">
+                    <div class="col-6 col-md-3 text-center text-md-end">
+                        <ul class="list-norm top-footer-list mb-5 mb-md-0">
                             <li class="top-footer-list__item">
                                 <h2 class="top-footer-list__title">
                                     درباره ما
@@ -93,8 +94,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-6 col-md-3">
-                        <ul class="list-norm top-footer-list">
+                    <div class="col-6 col-md-3 text-center text-md-end">
+                        <ul class="list-norm top-footer-list mb-5 mb-md-0">
                             <li class="top-footer-list__item">
                                 <h2 class="top-footer-list__title">
                                     خدمات مشتریان
@@ -122,8 +123,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-6 col-md-3">
-                        <ul class="list-norm top-footer-list">
+                    <div class="col-6 col-md-3 text-center text-md-end">
+                        <ul class="list-norm top-footer-list mb-5 mb-md-0">
                             <li class="top-footer-list__item">
                                 <h2 class="top-footer-list__title">
                                     انواع پیانو ها
@@ -151,8 +152,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-6 col-md-3">
-                        <ul class="list-norm top-footer-list">
+                    <div class="col-6 col-md-3 text-center text-md-end">
+                        <ul class="list-norm top-footer-list mb-5 mb-md-0">
                             <li class="top-footer-list__item">
                                 <h2 class="top-footer-list__title">
                                     تجهیزات جانبی
@@ -182,39 +183,42 @@
                     </div>
                 </div>
             </section>
-            <section class="bottom-footer d-flex justify-content-between">
-                <ul class="bottom-footer-right d-flex list-norm">
-                    <li class="bottom-footer-right__item">
-                        <a href="#" class="a-cus bottom-footer-right__link">درباره ما</a>
-                    </li>
-                    <li class="bottom-footer-right__item">
-                        <a href="#" class="a-cus bottom-footer-right__link">وبلاگ</a>
-                    </li>
-                    <li class="bottom-footer-right__item">
-                        <a href="#" class="a-cus bottom-footer-right__link">سوالات متداول</a>
-                    </li>
-                    <li class="bottom-footer-right__item">
-                        <a href="#" class="a-cus bottom-footer-right__link">رهگیری سفارشات</a>
-                    </li>
-                    <li class="bottom-footer-right__item">
-                        <a href="#" class="a-cus bottom-footer-right__link">تماس با ما</a>
-                    </li>
-                </ul>
-
-                <ul class="bottom-footer-left  d-flex list-norm">
-                    <li class="bottom-footer-left__item">
-                        با ما در ارتباط باشید :
-                    </li>
-                    <li class="bottom-footer-left__item">
-                        <a href="#" class="a-cus bottom-footer-left__link"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-                    </li>
-                    <li class="bottom-footer-left__item bottom-footer-left__link">
-                        <a href="#" class="a-cus"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                    </li>
-                    <li class="bottom-footer-left__item bottom-footer-left__link">
-                        <a href="#" class="a-cus"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
+            <section class="bottom-footer row">
+                <div class="col-12 col-md-6">
+                    <ul class="bottom-footer-right d-flex flex-wrap justify-content-center justify-content-md-start mb-4 mb-md-0 list-norm">
+                        <li class="bottom-footer-right__item">
+                            <a href="#" class="a-cus bottom-footer-right__link">درباره ما</a>
+                        </li>
+                        <li class="bottom-footer-right__item">
+                            <a href="#" class="a-cus bottom-footer-right__link">وبلاگ</a>
+                        </li>
+                        <li class="bottom-footer-right__item">
+                            <a href="#" class="a-cus bottom-footer-right__link">سوالات متداول</a>
+                        </li>
+                        <li class="bottom-footer-right__item">
+                            <a href="#" class="a-cus bottom-footer-right__link">رهگیری سفارشات</a>
+                        </li>
+                        <li class="bottom-footer-right__item">
+                            <a href="#" class="a-cus bottom-footer-right__link">تماس با ما</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                    <ul class="bottom-footer-left  d-flex align-items-center justify-content-center justify-content-md-end list-norm">
+                        <li class="bottom-footer-left__item">
+                            با ما در ارتباط باشید :
+                        </li>
+                        <li class="bottom-footer-left__item">
+                            <a href="#" class="a-cus bottom-footer-left__link"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="bottom-footer-left__item bottom-footer-left__link">
+                            <a href="#" class="a-cus"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="bottom-footer-left__item bottom-footer-left__link">
+                            <a href="#" class="a-cus"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </footer>
     </div>
@@ -222,6 +226,7 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./wwwroot/js/swiper-bundle.min.js"></script>
+    <script src="wwwroot/js/script.js"></script>
     <script></script>
 </body>
 
