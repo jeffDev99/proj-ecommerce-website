@@ -71,10 +71,6 @@ body {
 
 /* header */
 
-.header {
-    padding: 5rem 0;
-}
-
 .main-nav__link {
     padding: 0 1rem;
     font-size: 15px;
@@ -88,6 +84,29 @@ body {
 
 .main-nav__link>i {
     font-size: 12px;
+}
+
+.main-nav-mobile {
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f4f4f4;
+    transform: translate3d(0, -100%, 0);
+    border-bottom: 2px solid #dadada;
+    transition: .2s ease-in-out all;
+}
+
+
+/* @media screen and (min-width:48rem) {
+    .main-nav-mobile {
+        top: 0;
+    }
+} */
+
+.main-nav-mobile .main-nav__link {
+    display: block;
+    padding: 1rem 0;
+    text-align: center;
 }
 
 .hamber-icon {

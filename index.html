@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <header class="row header align-items-center">
+        <header class="row py-4 py-md-5 align-items-center position-relative">
             <nav class="col-6 col-md-5">
                 <ul class="main-nav list-norm list-inline d-none d-md-block">
                     <li class="main-nav__item list-inline-item">
@@ -36,7 +36,40 @@
                         <a href="#" class="main-nav__link a-cus">درباره ما</a>
                     </li>
                 </ul>
-                <a href="#" class="text-dark a-cus"><i class="fas fa-bars mx-3 hamber-icon d-block d-md-none"></i></a>
+                <ul class="main-nav-mobile position-fixed list-norm  d-block d-md-none pb-5">
+                    <li class="main-nav__item d-flex justify-content-evenly align-items-center py-4">
+                        <i class="fas fa-times" id="btnCloseMobileNav"></i>
+                        <img src="./wwwroot/img/logo-dark.png" alt="piano shop">
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link a-cus">
+                             خانه
+                             <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link a-cus">
+                             محصولات
+                             <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link a-cus">وبلاگ</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link a-cus">درباره ما</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link a-cus">ورود</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link a-cus">
+                            سبد خرید
+                            (<span>0</span>)
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="text-dark a-cus"><i class="fas fa-bars mx-3 hamber-icon d-block d-md-none" id="hamberIcon"></i></a>
             </nav>
             <div class="col-6 col-md-2">
                 <h1 class="logo-wrapper">
