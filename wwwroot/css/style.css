@@ -1,205 +1,388 @@
 /*---------------------|normalize|--------------------*/
 
 :root {
-  --primary-color: #222222;
-  --secoundary-color: #888888;
-  --primary-background-color: #f4f4f4;
-  --focused-border-bottom: 1px solid #222222;
-  --line-eee: 2px solid #eeeeee;
-  --main-transition: 0.2s ease-in-out all;
+    --primary-color: #222222;
+    --secoundary-color: #888888;
+    --primary-background-color: #f4f4f4;
+    --focused-border-bottom: 1px solid #222222;
+    --line-eee: 2px solid #eeeeee;
+    --main-transition: 0.2s ease-in-out all;
 }
 
 @font-face {
-  font-family: "IRANSansWeb";
-  src: url(../font/IRANSansWeb.eot);
-  src: url(../font/IRANSansWeb.eot) format("embedded-opentype"),
-    url(../font/IRANSansWeb.woff) format("woff"),
-    url(../font/IRANSansWeb.ttf) format("truetype");
-  font-weight: 400;
-  font-style: normal;
+    font-family: "IRANSansWeb";
+    src: url(../font/IRANSansWeb.eot);
+    src: url(../font/IRANSansWeb.eot) format("embedded-opentype"), url(../font/IRANSansWeb.woff) format("woff"), url(../font/IRANSansWeb.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "shabnam-bold";
-  src: url(../font/Shabnam-Bold.eot);
-  src: url(../font/Shabnam-Bold.eot) format("embedded-opentype"),
-    url(../font/Shabnam-Bold.woff) format("woff"),
-    url(../font/Shabnam-Bold.ttf) format("truetype");
-  font-weight: 400;
-  font-style: normal;
+    font-family: "shabnam-bold";
+    src: url(../font/Shabnam-Bold.eot);
+    src: url(../font/Shabnam-Bold.eot) format("embedded-opentype"), url(../font/Shabnam-Bold.woff) format("woff"), url(../font/Shabnam-Bold.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "shabnam";
-  src: url(../font/Shabnam.eot);
-  src: url(../font/Shabnam.eot) format("embedded-opentype"),
-    url(../font/Shabnam.woff) format("woff"),
-    url(../font/Shabnam.ttf) format("truetype");
-  font-weight: 400;
-  font-style: normal;
+    font-family: "shabnam";
+    src: url(../font/Shabnam.eot);
+    src: url(../font/Shabnam.eot) format("embedded-opentype"), url(../font/Shabnam.woff) format("woff"), url(../font/Shabnam.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 *,
 body {
-  font-family: shabnam;
+    font-family: shabnam;
 }
 
 .img-normal {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 .a-cus {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .a-cus:hover {
-  color: inherit;
+    color: inherit;
+}
+
+.btn-cus {
+    display: table;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: .2rem;
+}
+
+.btn-cus--black {
+    width: 150px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: 2px solid transparent;
+    transition: .2s ease-in-out all;
+}
+
+.btn-cus--black:hover.btn-cus--hover {
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
 }
 
 .list-norm {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+
+
 /*---------------------|header|--------------------*/
+
 .main-nav__link {
-  padding: 0 1rem;
-  font-size: 15px;
-  transition: var(--main-transition);
-  color: var(--primary-color);
+    padding: 0 1rem;
+    font-size: 15px;
+    transition: var(--main-transition);
+    color: var(--primary-color);
 }
 
 .main-nav__link:hover {
-  color: var(--secoundary-color);
+    color: var(--secoundary-color);
 }
 
-.main-nav__link > i {
-  font-size: 12px;
+.main-nav__link>i {
+    font-size: 12px;
 }
 
 .main-nav-mobile {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--primary-background-color);
-  transform: translate3d(0, -100%, 0);
-  border-bottom: 2px solid #dadada;
-  z-index: 100;
-  transition: 0.2s ease-in-out all;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-background-color);
+    transform: translate3d(0, -100%, 0);
+    border-bottom: 2px solid #dadada;
+    z-index: 100;
+    transition: var(--main-transition);
 }
+
 .main-nav-mobile .main-nav__link {
-  display: block;
-  padding: 1rem 0;
-  text-align: center;
+    display: block;
+    padding: 1rem 0;
+    text-align: center;
 }
 
 .hamber-icon {
-  font-size: 20px;
+    font-size: 20px;
 }
+
+
 /*---------------------|index page|--------------------*/
-/* hero */
+
+
+/* hero section*/
+
 .hero {
-  background-color: var(--primary-background-color);
-  max-height: 629px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 3rem 0;
+    background-color: var(--primary-background-color);
+    max-height: 629px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 0;
 }
 
 .hero .swiper {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
+
 .hero .swiper-buttons {
-  padding-top: 3rem;
+    padding-top: 3rem;
 }
+
 .hero .swiper-btn-next,
 .hero .swiper-btn-prev {
-  font-size: 16px;
+    font-size: 16px;
 }
+
 .hero-right {
-  width: 70%;
-  margin: 0 auto;
+    width: 70%;
+    margin: 0 auto;
 }
+
 .hero-right__title {
-  font-size: 20px;
-  line-height: 2rem;
+    font-size: 20px;
+    line-height: 2rem;
 }
+
 @media screen and (min-width: 48rem) {
-  .hero-right__title {
-    font-size: 30px;
-    line-height: 3rem;
-  }
+    .hero-right__title {
+        font-size: 30px;
+        line-height: 3rem;
+    }
 }
+
 .hero-right__desc {
-  font-size: 13px;
-  line-height: 1.5rem;
-  color: #888;
+    font-size: 13px;
+    line-height: 1.5rem;
+    color: #888;
 }
+
 .hero-left__img-wrapper {
-  margin: 0 auto;
-  width: 70%;
+    margin: 0 auto;
+    width: 70%;
 }
+
+
+/* category section */
+
+.cat-header-menu__link {
+    color: var(--secoundary-color);
+    margin: 0 0 0 1rem;
+    transition: var(--main-transition);
+}
+
+.cat-header-menu__link.focused {
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.swiper-slider2-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-slider2__img-wrapper {
+    background-color: var(--primary-background-color);
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+.swiper-slider2__img-desc {
+    top: .7rem;
+}
+
+.swiper-slider2__title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.swiper-slider2__link {
+    display: table;
+    margin: 0 auto;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: .2rem;
+}
+
+.swiper-slider2__price {
+    font-weight: bold;
+}
+
+.swiper-slider2__price-deleted {
+    color: var(--secoundary-color);
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.swiper-slider2__bestprice {
+    font-weight: bold;
+}
+
+.starrr a {
+    color: var(--primary-color);
+}
+
+
+/* cta */
+
+.cta {
+    padding: 2rem 6rem;
+    margin: 5rem 0;
+    background-color: var(--primary-background-color);
+}
+
+.cta__title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cta__desc {
+    font-size: 14px;
+}
+
+.cta__img-wrapper {}
+
+@media screen and (min-width:48rem) {
+    .cta__img-wrapper {
+        position: absolute;
+        bottom: 0;
+        width: 20rem;
+    }
+}
+
+
+/* newsletter */
+
+.newsletter {
+    background-color: var(--primary-background-color);
+    padding: 7rem 2rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.newsletter__title {
+    font-weight: bolder;
+    font-size: 36px;
+    color: var(--primary-color);
+}
+
+.newsletter__para {
+    font-size: 14px;
+    color: var(--secoundary-color);
+}
+
+.newsletter-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletters-form__input {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border: 2px solid transparent;
+    transition: var(--main-transition);
+}
+
+.newsletters-form__input:focus {
+    border: 2px solid var(--secoundary-color);
+}
+
+
+/* brands */
+
+.brands {
+    margin: 5rem 0;
+}
+
+.swiper-slider3 .swiper-wrapper {
+    align-items: center;
+}
+
+.swiper-slider3__img-wrapper {
+    width: 160px;
+    /* height: 160px; */
+}
+
+.swiper-slider3__img-wrapper img {
+    filter: invert(82%) sepia(6%) saturate(6%) hue-rotate(126deg) brightness(91%) contrast(91%);
+    transition: var(--main-transition);
+}
+
+.swiper-slider3__img-wrapper img:hover {
+    filter: none;
+}
+
+
 /*---------------------|footer|--------------------*/
+
 .top-footer {
-  border-top: var(--line-eee);
-  padding: 5rem 0;
+    border-top: var(--line-eee);
+    padding: 5rem 0;
 }
 
 .top-footer-list__title {
-  font-size: 16px;
-  color: var(--primary-color);
-  margin-bottom: 2rem;
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
 }
 
 .top-footer-list__item {
-  color: var(--secoundary-color);
-  font-size: 14px;
-  margin-bottom: 0.5rem;
+    color: var(--secoundary-color);
+    font-size: 14px;
+    margin-bottom: 0.5rem;
 }
 
 .bottom-footer {
-  border-top: var(--line-eee);
-  padding: 2rem 0;
+    border-top: var(--line-eee);
+    padding: 2rem 0;
 }
 
 .bottom-footer-right__link {
-  padding: 0 1rem;
-  font-size: 14px;
-  color: var(--secoundary-color);
-  transition: var(--main-transition);
+    padding: 0 1rem;
+    font-size: 14px;
+    color: var(--secoundary-color);
+    transition: var(--main-transition);
 }
 
 .bottom-footer-right__link:hover {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .bottom-footer-left__item {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .bottom-footer-left__link {
-  font-size: 16px;
-  padding-right: 1rem;
-  color: var(--primary-color);
-  transition: var(--main-transition);
+    font-size: 16px;
+    padding-right: 1rem;
+    color: var(--primary-color);
+    transition: var(--main-transition);
 }
 
 .bottom-footer-left__link:hover {
-  color: var(--secoundary-color);
+    color: var(--secoundary-color);
 }
