@@ -337,6 +337,25 @@ body {
 }
 
 
+/*---------------------|blog posts page|--------------------*/
+
+.breadcrumb-custom {}
+
+.breadcrumb-custom__item {
+    color: var(--secoundary-color);
+    font-size: 14px;
+}
+
+.breadcrumb-custom__item::before {
+    float: right !important;
+    padding-left: 0.5rem !important;
+}
+
+.breadcrumb-custom__item.active {
+    color: var(--primary-color);
+}
+
+
 /*---------------------|footer|--------------------*/
 
 .top-footer {
