@@ -103,7 +103,7 @@
                     <li class="breadcrumb-item breadcrumb-custom__item active" aria-current="page">وبلاگ</li>
                 </ol>
             </nav>
-            <section class="row">
+            <section class="row flex-column-reverse flex-md-row">
                 <aside class="col-12 col-md-3">
                     <div class="widget">
                         <h3 class="widget__title">دسته بندی</h3>
@@ -229,26 +229,26 @@
                                         <section class="comment">
                                             <h3 class="comment__header"> نظر خود را با ما به اشتراک بگذارید</h3>
                                             <p>ایمیل شما نمایش داده نمیشود . فیلد های <span class="text-danger">*</span> دار الزامی میباشند</p>
-                                            <form action="" method="post" class="row">
+                                            <form action="" method="post" class="row form">
                                                 <div class="col-12">
-                                                    <label for="frm-comment__comment">نظر </label>
-                                                    <textarea name="frm-comment__comment" id="frm-comment__comment"></textarea>
+                                                    <label for="frm-comment__comment" class="form__label">نظر </label>
+                                                    <textarea name="frm-comment__comment" id="frm-comment__comment" class="form__input form__input--textarea"></textarea>
                                                 </div>
                                                 <div class="col-12 col-md-6">
-                                                    <label for="frm-comment__name">نام <span class="text-danger">*</span></label>
-                                                    <input type="text" name="frm-comment__name" id="frm-comment__name">
+                                                    <label for="frm-comment__name" class="form__label">نام <span class="text-danger">*</span></label>
+                                                    <input type="text" name="frm-comment__name" id="frm-comment__name" class="form__input">
                                                 </div>
                                                 <div class="col-12 col-md-6">
-                                                    <label for="frm-comment__email">ایمیل <span class="text-danger">*</span></label>
-                                                    <input type="email" name="frm-comment__email" id="frm-comment__email">
+                                                    <label for="frm-comment__email" class="form__label">ایمیل <span class="text-danger">*</span></label>
+                                                    <input type="email" name="frm-comment__email" id="frm-comment__email" class="form__input">
                                                 </div>
                                                 <div class="col-12 col-md-6">
-                                                    <label for="frm-comment__website">وبسایت</label>
-                                                    <input type="text" name="frm-comment__website" id="frm-comment__website">
+                                                    <label for="frm-comment__website" class="form__label">وبسایت</label>
+                                                    <input type="text" name="frm-comment__website" id="frm-comment__website" class="form__input">
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="submit" value="ثبت">
-                                                    <input type="reset" value="بازنشانی">
+                                                    <input type="submit" value="ثبت" class="btn-cus btn-cus--black btn-cus--hover d-inline-block mb-3">
+                                                    <input type="reset" value="بازنشانی" class="btn-cus btn-cus--red btn-cus--hover d-inline-block">
                                                 </div>
                                             </form>
                                         </section>
