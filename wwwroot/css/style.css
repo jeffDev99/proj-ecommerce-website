@@ -97,6 +97,19 @@ body {
     border: 2px solid var(--red-color);
 }
 
+.btn-cus--gray {
+    color: #78777b;
+    background-color: #eee;
+    border: 2px solid transparent;
+    transition: .2s ease-in-out all;
+}
+
+.btn-cus--gray:hover.btn-cus--hover {
+    color: #78777b;
+    background-color: transparent;
+    border: 2px solid #78777b;
+}
+
 .list-norm {
     list-style-type: none;
     margin: 0;
@@ -498,6 +511,78 @@ body {
 
 .form__input--textarea {
     height: 200px;
+}
+
+
+/*---------------------|product detail page|--------------------*/
+
+.product-detail-img-wrapper {
+    background-color: var(--primary-background-color);
+    padding: 1rem;
+    margin: 0;
+}
+
+.product-detail-img {}
+
+.swiper-slider-icon .swiper-slider2__img-wrapper {
+    padding: .5rem;
+}
+
+.product-title {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.product-para {
+    color: var(--secoundary-color);
+    font-size: 14px;
+}
+
+.product-price {
+    display: block;
+    margin: 1rem 0;
+}
+
+.product-body {
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.product-count {
+    width: 50px;
+}
+
+.like-product {
+    min-width: 50px;
+}
+
+.product-list-item {
+    font-size: 14px;
+}
+
+.product-list-item__value {
+    color: var(--secoundary-color);
+}
+
+.product-tab .nav-link {
+    color: var(--secoundary-color);
+}
+
+.product-tab .nav-pills .nav-link.active,
+.product-tab .nav-pills .show>.nav-link {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    border-radius: 0;
+}
+
+.sec-title {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 
