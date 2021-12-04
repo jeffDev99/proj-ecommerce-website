@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="wwwroot/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="wwwroot/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="wwwroot/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./wwwroot/css/splide.min.css">
+    <link rel="stylesheet" href="./wwwroot/css/starrr.css">
+    <link rel="stylesheet" href="./wwwroot/css/nouislider.min.css">
+    <link rel="stylesheet" href="wwwroot/css/style.css" rel="stylesheet" />
+    <title>محصولات</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row py-4 py-md-5 align-items-center position-relative">
+            <nav class="col-6 col-md-5">
+                <ul class="main-nav list-norm list-inline d-none d-md-block">
+                    <li class="main-nav__item list-inline-item">
+                        <a href="#" class="main-nav__link a-cus">
+                            خانه
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="main-nav__item list-inline-item">
+                        <a href="#" class="main-nav__link a-cus">
+                            محصولات
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="main-nav__item list-inline-item">
+                        <a href="#" class="main-nav__link a-cus">وبلاگ</a>
+                    </li>
+                    <li class="main-nav__item list-inline-item">
+                        <a href="#" class="main-nav__link a-cus">درباره ما</a>
+                    </li>
+                </ul>
+                <ul class="main-nav-mobile  list-norm  d-block d-md-none pb-5">
+                    <li class="main-nav__item d-flex justify-content-evenly align-items-center py-4">
+                        <i class="fas fa-times" id="btnCloseMobileNav"></i>
+                        <img src="./wwwroot/img/logo-dark.png" alt="piano shop">
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link a-cus">
+                            خانه
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link a-cus">
+                            محصولات
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link a-cus">وبلاگ</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link a-cus">درباره ما</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link a-cus">ورود</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link a-cus">
+                            سبد خرید
+                            (<span>0</span>)
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="text-dark a-cus"><i class="fas fa-bars mx-3 hamber-icon d-block d-md-none"
+                        id="hamberIcon"></i></a>
+            </nav>
+            <div class="col-6 col-md-2">
+                <h1 class="logo-wrapper">
+                    <img src="./wwwroot/img/logo-dark.png" alt="Piano shop" class="logo-wrapper__img d-block m-auto">
+                    <span class="visually-hidden">piano shop</span>
+                </h1>
+            </div>
+            <div class="col-12 col-md-5 d-none d-md-block">
+                <ul class="main-nav list-norm list-inline text-start">
+                    <li class="main-nav__item list-inline-item">
+                        <a href="#" class="main-nav__link a-cus">ورود</a>
+                    </li>
+                    <li class="main-nav__item list-inline-item">
+                        <a href="#" class="main-nav__link a-cus">
+                            سبد خرید
+                            (<span>0</span>)
+                        </a>
+                    </li>
+                    <li class="main-nav__item list-inline-item">
+                        <img src="./wwwroot/img/search.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-custom">
+                    <li class="breadcrumb-item breadcrumb-custom__item " aria-current="page">خانه</li>
+                    <li class="breadcrumb-item breadcrumb-custom__item " aria-current="page">محصولات</li>
+                    <li class="breadcrumb-item breadcrumb-custom__item active" aria-current="page">محصول</li>
+                </ol>
+            </nav>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-widget__title">دسته بندی محصولات</h3>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Accordion Item #1
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+                                            as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+                                            <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Accordion Item #2
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+                                            the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Accordion Item #3
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+                                            the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-widget__title">فیلتر بر اساس اندازه</h3>
+                            <ul class="list-norm">
+                                <li>
+                                    <a href="#" class="sidebar-widget__link a-cus">
+                                        l(3)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-widget__link a-cus">
+                                        m(3)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-widget__link a-cus">
+                                        s(3)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-widget__link a-cus">
+                                        xl(3)
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-widget__title">فیلتر بر اساس رنگ</h3>
+                            <ul class="list-norm">
+                                <li>
+                                    <a href="#" class="sidebar-widget__link a-cus">
+                                        سبز
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-widget__link a-cus">
+                                        آبی
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-widget__link a-cus">
+                                        قرمز
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-widget__title">محصولات</h3>
+                            <ul class="list-norm">
+                                <li>
+                                    <a href="#" class="widget-list__link a-cus">
+                                        <figure class="d-flex">
+                                            <img src="./wwwroot/img/piano" class="img-fluid widget-list__img">
+                                            <figcaption class="widget-list__text d-flex flex-column justify-content-center p-2">
+                                                <h3 class="widget-list__title">آشنایی کامل با پیانو و انواع آن</h3>
+                                                <time class="widget-list__desc">2 آبان 1397</time>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="widget-list__link a-cus">
+                                        <figure class="d-flex">
+                                            <img src="./wwwroot/img/piano.jpg" class="img-fluid widget-list__img">
+                                            <figcaption class="widget-list__text d-flex flex-column justify-content-center p-2">
+                                                <h3 class="widget-list__title">آشنایی کامل با پیانو و انواع آن</h3>
+                                                <time class="widget-list__desc">2 آبان 1397</time>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="widget-list__link a-cus">
+                                        <figure class="d-flex">
+                                            <img src="./wwwroot/img/piano.jpg" class="img-fluid widget-list__img">
+                                            <figcaption class="widget-list__text d-flex flex-column justify-content-center p-2">
+                                                <h3 class="widget-list__title">آشنایی کامل با پیانو و انواع آن</h3>
+                                                <time class="widget-list__desc">2 آبان 1397</time>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-widget__title">تگ های محصول</h3>
+                            <ul class="list-norm d-flex align-items-center flex-wrap sidebar-widget-tags">
+                                <li>
+                                    <a href="#" class="sidebar-widget-tags__link a-cus">پیانو پیانو پیانو پیانو</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-widget-tags__link a-cus">پیانو پیانو</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-widget-tags__link a-cus">پیانو پیانو</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-widget-tags__link a-cus">پیانو</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9 px-md-5">
+                        <section class="mb-5">
+                            <figure class="main-header-hero">
+                                <a href="#" class="a-cus">
+                                    <h2 class="main-header-hero__title">
+                                        پیانو های
+                                        <strong>جدید</strong>
+                                    </h2>
+                                </a>
+                            </figure>
+                        </section>
+                        <section class="row">
+                            <div class="col-12 col-md-4 mb-5">
+                                <figure class="swiper-slider2-content">
+                                    <div class="swiper-slider2__img-wrapper position-relative">
+                                        <p class="swiper-slider2__img-desc position-absolute">حراج</p>
+                                        <img src="./wwwroot/img/products/ju-109.png" alt="yamaha ju 109" class="swiper-slider2__img w-100">
+                                    </div>
+                                    <figcaption class="swiper-slider2__text text-center">
+                                        <h2 class="swiper-slider2__title">پیانو آکوستیک دیواری یاماها JU 109 </h2>
+                                        <p class="swiper-slider2__price">
+                                            <span class=" swiper-slider2__price-deleted"> ۱,۴۹۵,۰۰۰,۰۰۰ ريال</span>
+                                            <span class="swiper-slider2__bestprice">۱,۴۹۵,۰۰۰,۰۰۰ ريال</span>
+                                        </p>
+                                        <div class='starrr star1' id='star1'></div>
+                                        <a href="javascript:void(0)" class=" swiper-slider2__link a-cus">اضافه به سبد خرید</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-md-4 mb-5">
+                                <figure class="swiper-slider2-content">
+                                    <div class="swiper-slider2__img-wrapper position-relative">
+                                        <p class="swiper-slider2__img-desc position-absolute">حراج</p>
+                                        <img src="./wwwroot/img/products/ju-109.png" alt="yamaha ju 109" class="swiper-slider2__img w-100">
+                                    </div>
+                                    <figcaption class="swiper-slider2__text text-center">
+                                        <h2 class="swiper-slider2__title">پیانو آکوستیک دیواری یاماها JU 109 </h2>
+                                        <p class="swiper-slider2__price">
+                                            <span class=" swiper-slider2__price-deleted"> ۱,۴۹۵,۰۰۰,۰۰۰ ريال</span>
+                                            <span class="swiper-slider2__bestprice">۱,۴۹۵,۰۰۰,۰۰۰ ريال</span>
+                                        </p>
+                                        <div class='starrr star1' id='star1'></div>
+                                        <a href="javascript:void(0)" class=" swiper-slider2__link a-cus">اضافه به سبد خرید</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-md-4 mb-5">
+                                <figure class="swiper-slider2-content">
+                                    <div class="swiper-slider2__img-wrapper position-relative">
+                                        <p class="swiper-slider2__img-desc position-absolute">حراج</p>
+                                        <img src="./wwwroot/img/products/ju-109.png" alt="yamaha ju 109" class="swiper-slider2__img w-100">
+                                    </div>
+                                    <figcaption class="swiper-slider2__text text-center">
+                                        <h2 class="swiper-slider2__title">پیانو آکوستیک دیواری یاماها JU 109 </h2>
+                                        <p class="swiper-slider2__price">
+                                            <span class=" swiper-slider2__price-deleted"> ۱,۴۹۵,۰۰۰,۰۰۰ ريال</span>
+                                            <span class="swiper-slider2__bestprice">۱,۴۹۵,۰۰۰,۰۰۰ ريال</span>
+                                        </p>
+                                        <div class='starrr star1' id='star1'></div>
+                                        <a href="javascript:void(0)" class=" swiper-slider2__link a-cus">اضافه به سبد خرید</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-md-4 mb-5">
+                                <figure class="swiper-slider2-content">
+                                    <div class="swiper-slider2__img-wrapper position-relative">
+                                        <p class="swiper-slider2__img-desc position-absolute">حراج</p>
+                                        <img src="./wwwroot/img/products/ju-109.png" alt="yamaha ju 109" class="swiper-slider2__img w-100">
+                                    </div>
+                                    <figcaption class="swiper-slider2__text text-center">
+                                        <h2 class="swiper-slider2__title">پیانو آکوستیک دیواری یاماها JU 109 </h2>
+                                        <p class="swiper-slider2__price">
+                                            <span class=" swiper-slider2__price-deleted"> ۱,۴۹۵,۰۰۰,۰۰۰ ريال</span>
+                                            <span class="swiper-slider2__bestprice">۱,۴۹۵,۰۰۰,۰۰۰ ريال</span>
+                                        </p>
+                                        <div class='starrr star1' id='star1'></div>
+                                        <a href="javascript:void(0)" class=" swiper-slider2__link a-cus">اضافه به سبد خرید</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <section class="top-footer">
+                    <div class="row">
+                        <div class="col-6 col-md-3 text-center text-md-end">
+                            <ul class="list-norm top-footer-list mb-5 mb-md-0">
+                                <li class="top-footer-list__item">
+                                    <h2 class="top-footer-list__title">
+                                        درباره ما
+                                    </h2>
+                                </li>
+                                <li class="top-footer-list__item">
+                                    <a href="#" class="a-cus top-footer-list__link">
+                                        لورمه بعدا مینویسمش
+                                    </a>
+                                </li>
+                                <li class="top-footer-list__item">
+                                    <a href="#" class="a-cus top-footer-list__link">
+                                        لورمه بعدا مینویسمش
+                                    </a>
+                                </li>
+                                <li class="top-footer-list__item">
+                                    <a href="#" class="a-cus top-footer-list__link">
+                                        لورمه بعدا مینویسمش
+                                    </a>
+                                </li>
+                                <li class="top-footer-list__item">
+                                    <a href="#" class="a-cus top-footer-list__link">
+                                        لورمه بعدا مینویسمش
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3 text-center text-md-end">
+                            <ul class="list-norm top-footer-list mb-5 mb-md-0">
+                                <li class="top-footer-list__item">
+                                    <h2 class="top-footer-list__title">
+                                        خدمات مشتریان
+                                    </h2>
+                                </li>
+                                <li class="top-footer-list__item">
+                                    <a href="#" class="a-cus top-footer-list__link">
+                                        لورمه بعدا مینویسمش
+                                    </a>
+                                </li>
+                                <li class="top-footer-list__item">
+                                    <a href="#" class="a-cus top-footer-list__link">
+                                        لورمه بعدا مینویسمش
+                                    </a>
+                                </li>
+                                <li class="top-footer-list__item">
+                                    <a href="#" class="a-cus top-footer-list__link">
+                                        لورمه بعدا مینویسمش
+                                    </a>
+                                </li>
+                                <li class="top-footer-list__item">
+                                    <a href="#" class="a-cus top-footer-list__link">
+                                        لورمه بعدا مینویسمش
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3 text-center text-md-end">
+                            <ul class="list-norm top-footer-list mb-5 mb-md-0">
+                                <li class="top-footer-list__item">
+                                    <h2 class="top-footer-list__title">
+                                        انواع پیانو ها
+                                    </h2>
+                                </li>
+                                <li class="top-footer-list__item">
+                                    <a href="#" class="a-cus top-footer-list__link">
+                                        لورمه بعدا مینویسمش
+                                    </a>
+                                </li>
+                                <li class="top-footer-list__item">
+                                    <a href="#" class="a-cus top-footer-list__link">
+                                        لورمه بعدا مینویسمش
+                                    </a>
+                                </li>
+                                <li class="top-footer-list__item">
+                                    <a href="#" class="a-cus top-footer-list__link">
+                                        لورمه بعدا مینویسمش
+                                    </a>
+                                </li>
+                                <li class="top-footer-list__item">
+                                    <a href="#" class="a-cus top-footer-list__link">
+                                        لورمه بعدا مینویسمش
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3 text-center text-md-end">
+                            <ul class="list-norm top-footer-list mb-5 mb-md-0">
+                                <li class="top-footer-list__item">
+                                    <h2 class="top-footer-list__title">
+                                        تجهیزات جانبی
+                                    </h2>
+                                </li>
+                                <li class="top-footer-list__item">
+                                    <a href="#" class="a-cus top-footer-list__link">
+                                        لورمه بعدا مینویسمش
+                                    </a>
+                                </li>
+                                <li class="top-footer-list__item">
+                                    <a href="#" class="a-cus top-footer-list__link">
+                                        لورمه بعدا مینویسمش
+                                    </a>
+                                </li>
+                                <li class="top-footer-list__item">
+                                    <a href="#" class="a-cus top-footer-list__link">
+                                        لورمه بعدا مینویسمش
+                                    </a>
+                                </li>
+                                <li class="top-footer-list__item">
+                                    <a href="#" class="a-cus top-footer-list__link">
+                                        لورمه بعدا مینویسمش
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="bottom-footer row">
+                    <div class="col-12 col-md-6">
+                        <ul class="bottom-footer-right d-flex flex-wrap justify-content-center justify-content-md-start mb-4 mb-md-0 list-norm">
+                            <li class="bottom-footer-right__item">
+                                <a href="#" class="a-cus bottom-footer-right__link">درباره ما</a>
+                            </li>
+                            <li class="bottom-footer-right__item">
+                                <a href="#" class="a-cus bottom-footer-right__link">وبلاگ</a>
+                            </li>
+                            <li class="bottom-footer-right__item">
+                                <a href="#" class="a-cus bottom-footer-right__link">سوالات متداول</a>
+                            </li>
+                            <li class="bottom-footer-right__item">
+                                <a href="#" class="a-cus bottom-footer-right__link">رهگیری سفارشات</a>
+                            </li>
+                            <li class="bottom-footer-right__item">
+                                <a href="#" class="a-cus bottom-footer-right__link">تماس با ما</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <ul class="bottom-footer-left  d-flex align-items-center justify-content-center justify-content-md-end list-norm">
+                            <li class="bottom-footer-left__item">
+                                با ما در ارتباط باشید :
+                            </li>
+                            <li class="bottom-footer-left__item">
+                                <a href="#" class="a-cus bottom-footer-left__link"><i class="fa fa-telegram"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li class="bottom-footer-left__item bottom-footer-left__link">
+                                <a href="#" class="a-cus"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="bottom-footer-left__item bottom-footer-left__link">
+                                <a href="#" class="a-cus"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </footer>
+        </div>
+
+        <script src="./wwwroot/js/jquery-3.6.0.min.js"></script>
+        <script src="./wwwroot/js/splide.min.js"></script>
+        <script src="./wwwroot/js/bootstrap.bundle.min.js"></script>
+        <script src="./wwwroot/js/swiper-bundle.min.js"></script>
+        <script src="./wwwroot/js/starrr.js"></script>
+        <script src="./wwwroot/js/nouislider.min.js"></script>
+        <script src="./wwwroot/js/wNumb.min.js"></script>
+        <script src="wwwroot/js/script.js"></script>
+</body>
+
+</html>
